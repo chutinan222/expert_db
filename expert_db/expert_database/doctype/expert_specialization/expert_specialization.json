@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-10 14:19:24.577401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_nxvj",
+  "experts_specialization"
+ ],
+ "fields": [
+  {
+   "fieldname": "experts_specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0e04\u0e27\u0e32\u0e21\u0e40\u0e0a\u0e35\u0e48\u0e22\u0e27\u0e0a\u0e32\u0e0d",
+   "options": "Expert Tags",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nxvj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-12 13:53:20.397831",
+ "modified_by": "Administrator",
+ "module": "Expert Database",
+ "name": "Expert Specialization",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
