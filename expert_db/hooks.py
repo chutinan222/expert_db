@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "expert_db",
-# 		"logo": "/assets/expert_db/logo.png",
-# 		"title": "Expert Database",
-# 		"route": "/expert_db",
-# 		"has_permission": "expert_db.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "expert_db",
+		"logo": "/assets/expert_db/logo.png",
+		"title": "Expert Database",
+		"route": "/app/expert-database",
+		# "has_permission": "expert_db.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -241,4 +241,3 @@ export_python_type_annotations = True
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
