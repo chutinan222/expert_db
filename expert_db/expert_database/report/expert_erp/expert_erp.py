@@ -7,7 +7,22 @@ import frappe
 def execute(filters=None):
 	columns = build_column()
 
-	# Fetch Candidate Profile data
+	# Build DB filters from UI filters (support: name_expert partial, course dropdown)
+	filters_for_db = []
+	if filters:
+		# course dropdown -> map to boolean fields
+		course = filters.get("course")
+		if course and course != "All":
+			if course == "IE (M.Eng)":
+				filters_for_db.append(["m_ie", "=", 1])
+			elif course == "IM (M.Eng)":
+				filters_for_db.append(["m_im", "=", 1])
+			elif course == "IE (Ph.D.)":
+				filters_for_db.append(["p_ie", "=", 1])
+			elif course == "LE (M.Eng)":
+				filters_for_db.append(["m_le", "=", 1])
+
+	# Fetch Candidate Profile data using mapped filters
 	profiles = frappe.get_all(
 		"Candidate Profile",
 		fields=[
@@ -23,7 +38,7 @@ def execute(filters=None):
 			"announcement_no",
 			"announcement_date",
 		],
-		filters=filters,
+		filters=filters_for_db or None,
 	)
 
 	# Fetch expert_specialization for each profile and determine courses
