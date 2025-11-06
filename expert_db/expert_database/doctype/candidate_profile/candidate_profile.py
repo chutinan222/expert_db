@@ -13,11 +13,8 @@ class CandidateProfile(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
+		from expert_db.expert_database.doctype.expert_specialization.expert_specialization import ExpertSpecialization
 		from frappe.types import DF
-
-		from expert_db.expert_database.doctype.expert_specialization.expert_specialization import (
-			ExpertSpecialization,
-		)
 
 		affiliation: DF.Data | None
 		announcement_attachment: DF.Attach | None
@@ -33,6 +30,7 @@ class CandidateProfile(Document):
 		name_expert: DF.Data | None
 		p_ie: DF.Check
 	# end: auto-generated types
+
 	pass
 
 	# def autoname(self):

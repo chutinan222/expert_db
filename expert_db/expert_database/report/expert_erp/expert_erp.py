@@ -94,7 +94,7 @@ def build_column():
 			"fieldname": "name_expert",
 			"label": "ชื่อ-สกุล",
 			"fieldtype": "Data",
-			"width": 150,
+			"width": 350,
 		},
 		{
 			"fieldname": "affiliation",
@@ -112,7 +112,7 @@ def build_column():
 			"fieldname": "announcement_date",
 			"label": "วันที่ประกาศ",
 			"fieldtype": "Date",
-			"width": 120,
+			"width": 150,
 		},
 		{
 			"fieldname": "courses",
@@ -124,7 +124,7 @@ def build_column():
 			"fieldname": "can_exam",
 			"label": "สิทธิ์สอบ",
 			"fieldtype": "Check",
-			"width": 100,
+			"width": 150,
 		},
 		{
 			"fieldname": "can_advise",
@@ -136,7 +136,7 @@ def build_column():
 			"fieldname": "expert_specialization",
 			"label": "ความเชี่ยวชาญ",
 			"fieldtype": "Data",
-			"width": 200,
+			"width": 300,
 		},
 	]
 	return column
