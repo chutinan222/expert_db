@@ -14,13 +14,21 @@ def execute(filters=None):
 		course = filters.get("course")
 		if course and course != "All":
 			if course == "IE (M.Eng)":
-				filters_for_db.append(["m_ie", "=", 1])
+				filters_for_db.append(
+					["m_ie", "=", 1]
+				)
 			elif course == "IM (M.Eng)":
-				filters_for_db.append(["m_im", "=", 1])
+				filters_for_db.append(
+					["m_im", "=", 1]
+				)
 			elif course == "IE (Ph.D.)":
-				filters_for_db.append(["p_ie", "=", 1])
+				filters_for_db.append(
+					["p_ie", "=", 1]
+				)
 			elif course == "LE (M.Eng)":
-				filters_for_db.append(["m_le", "=", 1])
+				filters_for_db.append(
+					["m_le", "=", 1]
+				)
 
 	# Fetch Candidate Profile data using mapped filters
 	profiles = frappe.get_all(
@@ -100,7 +108,7 @@ def build_column():
 			"fieldname": "affiliation",
 			"label": "สังกัด",
 			"fieldtype": "Data",
-			"width": 150,
+			"width": 300,
 		},
 		{
 			"fieldname": "announcement_no",
@@ -136,7 +144,7 @@ def build_column():
 			"fieldname": "expert_specialization",
 			"label": "ความเชี่ยวชาญ",
 			"fieldtype": "Data",
-			"width": 300,
+			"width": 250,
 		},
 	]
 	return column
