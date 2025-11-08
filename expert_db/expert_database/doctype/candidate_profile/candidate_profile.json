@@ -1,194 +1,194 @@
 {
-    "actions": [],
-    "allow_import": 1,
-    "allow_rename": 1,
-    "autoname": ".#####",
-    "creation": "2025-10-10 13:09:19.326796",
-    "doctype": "DocType",
-    "engine": "InnoDB",
-    "field_order": [
-        "name_expert",
-        "affiliation",
-        "major_level",
-        "column_break_omun",
-        "m_ie",
-        "m_le",
-        "m_im",
-        "p_ie",
-        "expert_qualification",
-        "expert_examiner",
-        "expert_advisor",
-        "expert_announcement",
-        "announcement_no",
-        "announcement_date",
-        "column_break_yfru",
-        "announcement_attachment",
-        "expert_degree",
-        "section_break_gbns",
-        "expert_specialization"
-    ],
-    "fields": [
-        {
-            "fieldname": "name_expert",
-            "fieldtype": "Data",
-            "label": "\u0e0a\u0e37\u0e48\u0e2d-\u0e2a\u0e01\u0e38\u0e25"
-        },
-        {
-            "fieldname": "affiliation",
-            "fieldtype": "Data",
-            "label": "\u0e2a\u0e31\u0e07\u0e01\u0e31\u0e14"
-        },
-        {
-            "fieldname": "major_level",
-            "fieldtype": "Section Break",
-            "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23"
-        },
-        {
-            "default": "0",
-            "fieldname": "m_ie",
-            "fieldtype": "Check",
-            "label": "IE (M.Eng)"
-        },
-        {
-            "default": "0",
-            "fieldname": "m_le",
-            "fieldtype": "Check",
-            "label": "LE (M.Eng) "
-        },
-        {
-            "default": "0",
-            "fieldname": "m_im",
-            "fieldtype": "Check",
-            "label": "IM (M.Eng)  "
-        },
-        {
-            "default": "0",
-            "fieldname": "p_ie",
-            "fieldtype": "Check",
-            "label": "IE (Ph.D.)"
-        },
-        {
-            "default": "0",
-            "fieldname": "expert_examiner",
-            "fieldtype": "Check",
-            "label": "\u0e2a\u0e2d\u0e1a"
-        },
-        {
-            "default": "0",
-            "fieldname": "expert_advisor",
-            "fieldtype": "Check",
-            "label": "\u0e2d\u0e32\u0e08\u0e32\u0e23\u0e22\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32"
-        },
-        {
-            "fieldname": "expert_qualification",
-            "fieldtype": "Section Break",
-            "label": "\u0e04\u0e38\u0e13\u0e2a\u0e21\u0e1a\u0e31\u0e15\u0e34"
-        },
-        {
-            "fieldname": "expert_announcement",
-            "fieldtype": "Section Break",
-            "label": "\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07\u0e1b\u0e23\u0e30\u0e01\u0e32\u0e28"
-        },
-        {
-            "fieldname": "announcement_no",
-            "fieldtype": "Data",
-            "label": "\u0e40\u0e25\u0e02\u0e17\u0e35\u0e48\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07"
-        },
-        {
-            "fieldname": "announcement_attachment",
-            "fieldtype": "Attach",
-            "label": "\u0e2b\u0e19\u0e31\u0e07\u0e2a\u0e37\u0e2d\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07"
-        },
-        {
-            "fieldname": "announcement_date",
-            "fieldtype": "Data",
-            "label": "\u0e41\u0e15\u0e48\u0e07\u0e15\u0e31\u0e49\u0e07\u0e15\u0e32\u0e21\u0e02\u0e49\u0e2d\u0e1a\u0e31\u0e07\u0e04\u0e31\u0e1a"
-        },
-        {
-            "fieldname": "column_break_yfru",
-            "fieldtype": "Column Break"
-        },
-        {
-            "fieldname": "expert_degree",
-            "fieldtype": "Attach",
-            "label": "\u0e27\u0e38\u0e12\u0e34\u0e01\u0e32\u0e23\u0e28\u0e36\u0e01\u0e29\u0e32"
-        },
-        {
-            "fieldname": "section_break_gbns",
-            "fieldtype": "Section Break",
-            "permlevel": 1
-        },
-        {
-            "fieldname": "expert_specialization",
-            "fieldtype": "Table",
-            "label": "\u0e04\u0e27\u0e32\u0e21\u0e40\u0e0a\u0e35\u0e48\u0e22\u0e27\u0e0a\u0e32\u0e0d",
-            "options": "Expert Specialization",
-            "permlevel": 1
-        },
-        {
-            "fieldname": "column_break_omun",
-            "fieldtype": "Column Break"
-        }
-    ],
-    "grid_page_length": 50,
-    "index_web_pages_for_search": 1,
-    "links": [],
-    "modified": "2025-11-08 14:26:51.991064",
-    "modified_by": "Administrator",
-    "module": "Expert Database",
-    "name": "Candidate Profile",
-    "naming_rule": "Expression (old style)",
-    "owner": "Administrator",
-    "permissions": [
-        {
-            "create": 1,
-            "delete": 1,
-            "email": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "System Manager",
-            "share": 1,
-            "write": 1
-        },
-        {
-            "delete": 1,
-            "email": 1,
-            "export": 1,
-            "permlevel": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "System Manager",
-            "share": 1,
-            "write": 1
-        },
-        {
-            "email": 1,
-            "export": 1,
-            "permlevel": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "Reviewer",
-            "share": 1,
-            "write": 1
-        },
-        {
-            "email": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "report": 1,
-            "role": "Reviewer",
-            "share": 1,
-            "write": 1
-        }
-    ],
-    "row_format": "Dynamic",
-    "rows_threshold_for_grid_search": 20,
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "states": []
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series : [name_expert]",
+ "creation": "2025-10-10 13:09:19.326796",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_expert",
+  "affiliation",
+  "major_level",
+  "column_break_omun",
+  "m_ie",
+  "m_le",
+  "m_im",
+  "p_ie",
+  "expert_qualification",
+  "expert_examiner",
+  "expert_advisor",
+  "expert_announcement",
+  "announcement_no",
+  "announcement_date",
+  "column_break_yfru",
+  "announcement_attachment",
+  "expert_degree",
+  "section_break_gbns",
+  "expert_specialization"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_expert",
+   "fieldtype": "Data",
+   "label": "\u0e0a\u0e37\u0e48\u0e2d-\u0e2a\u0e01\u0e38\u0e25"
+  },
+  {
+   "fieldname": "affiliation",
+   "fieldtype": "Data",
+   "label": "\u0e2a\u0e31\u0e07\u0e01\u0e31\u0e14"
+  },
+  {
+   "fieldname": "major_level",
+   "fieldtype": "Section Break",
+   "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23"
+  },
+  {
+   "default": "0",
+   "fieldname": "m_ie",
+   "fieldtype": "Check",
+   "label": "IE (M.Eng)"
+  },
+  {
+   "default": "0",
+   "fieldname": "m_le",
+   "fieldtype": "Check",
+   "label": "LE (M.Eng) "
+  },
+  {
+   "default": "0",
+   "fieldname": "m_im",
+   "fieldtype": "Check",
+   "label": "IM (M.Eng)  "
+  },
+  {
+   "default": "0",
+   "fieldname": "p_ie",
+   "fieldtype": "Check",
+   "label": "IE (Ph.D.)"
+  },
+  {
+   "default": "0",
+   "fieldname": "expert_examiner",
+   "fieldtype": "Check",
+   "label": "\u0e2a\u0e2d\u0e1a"
+  },
+  {
+   "default": "0",
+   "fieldname": "expert_advisor",
+   "fieldtype": "Check",
+   "label": "\u0e2d\u0e32\u0e08\u0e32\u0e23\u0e22\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32"
+  },
+  {
+   "fieldname": "expert_qualification",
+   "fieldtype": "Section Break",
+   "label": "\u0e04\u0e38\u0e13\u0e2a\u0e21\u0e1a\u0e31\u0e15\u0e34"
+  },
+  {
+   "fieldname": "expert_announcement",
+   "fieldtype": "Section Break",
+   "label": "\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07\u0e1b\u0e23\u0e30\u0e01\u0e32\u0e28"
+  },
+  {
+   "fieldname": "announcement_no",
+   "fieldtype": "Data",
+   "label": "\u0e40\u0e25\u0e02\u0e17\u0e35\u0e48\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07"
+  },
+  {
+   "fieldname": "announcement_attachment",
+   "fieldtype": "Attach",
+   "label": "\u0e2b\u0e19\u0e31\u0e07\u0e2a\u0e37\u0e2d\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07"
+  },
+  {
+   "fieldname": "announcement_date",
+   "fieldtype": "Data",
+   "label": "\u0e41\u0e15\u0e48\u0e07\u0e15\u0e31\u0e49\u0e07\u0e15\u0e32\u0e21\u0e02\u0e49\u0e2d\u0e1a\u0e31\u0e07\u0e04\u0e31\u0e1a"
+  },
+  {
+   "fieldname": "column_break_yfru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expert_degree",
+   "fieldtype": "Attach",
+   "label": "\u0e27\u0e38\u0e12\u0e34\u0e01\u0e32\u0e23\u0e28\u0e36\u0e01\u0e29\u0e32"
+  },
+  {
+   "fieldname": "section_break_gbns",
+   "fieldtype": "Section Break",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "expert_specialization",
+   "fieldtype": "Table",
+   "label": "\u0e04\u0e27\u0e32\u0e21\u0e40\u0e0a\u0e35\u0e48\u0e22\u0e27\u0e0a\u0e32\u0e0d",
+   "options": "Expert Specialization",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_omun",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-08 16:29:59.738525",
+ "modified_by": "Administrator",
+ "module": "Expert Database",
+ "name": "Candidate Profile",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Reviewer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Reviewer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
 }
