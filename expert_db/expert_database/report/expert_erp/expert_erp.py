@@ -117,12 +117,6 @@ def build_column():
 			"width": 150,
 		},
 		{
-			"fieldname": "announcement_date",
-			"label": "วันที่ประกาศ",
-			"fieldtype": "Date",
-			"width": 150,
-		},
-		{
 			"fieldname": "courses",
 			"label": "หลักสูตรที่สามารถสอบได้",
 			"fieldtype": "Data",
@@ -145,6 +139,12 @@ def build_column():
 			"label": "ความเชี่ยวชาญ",
 			"fieldtype": "Data",
 			"width": 250,
+		},
+		{
+			"fieldname": "announcement_date",
+			"label": "แต่งตั้งตามข้อบังคับ",
+			"fieldtype": "Data",
+			"width": 350,
 		},
 	]
 	return column
