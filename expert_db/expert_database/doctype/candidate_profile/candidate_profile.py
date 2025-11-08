@@ -13,17 +13,17 @@ class CandidateProfile(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from expert_db.expert_database.doctype.expert_specialization.expert_specialization import ExpertSpecialization
+		from frappe.model.document import Document
 		from frappe.types import DF
 
 		affiliation: DF.Data | None
 		announcement_attachment: DF.Attach | None
-		announcement_date: DF.Date | None
+		announcement_date: DF.Data | None
 		announcement_no: DF.Data | None
 		expert_advisor: DF.Check
 		expert_degree: DF.Attach | None
 		expert_examiner: DF.Check
-		expert_specialization: DF.Table[ExpertSpecialization]
+		expert_specialization: DF.Table[Document]
 		m_ie: DF.Check
 		m_im: DF.Check
 		m_le: DF.Check
