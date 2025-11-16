@@ -102,7 +102,7 @@ def build_column():
 			"fieldname": "name_expert",
 			"label": "ชื่อ-สกุล",
 			"fieldtype": "Data",
-			"width": 350,
+			"width": 300,
 		},
 		{
 			"fieldname": "affiliation",
@@ -144,7 +144,7 @@ def build_column():
 			"fieldname": "announcement_date",
 			"label": "แต่งตั้งตามข้อบังคับ",
 			"fieldtype": "Data",
-			"width": 350,
+			"width": 250,
 		},
 	]
 	return column
