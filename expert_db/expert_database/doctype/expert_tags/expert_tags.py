@@ -9,12 +9,11 @@ class ExpertTags(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
-	from typing import TYPE_CHECKING
+	from typing import TYPE_CHECKING, Literal
 
 	if TYPE_CHECKING:
-		from frappe.types import DF
 
-		name1: DF.Data
+		name1: str | None
 	# end: auto-generated types
 
 	pass
