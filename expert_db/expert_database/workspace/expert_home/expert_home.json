@@ -1,49 +1,56 @@
 {
- "app": "expert_db",
- "charts": [],
- "content": "[{\"id\":\"jxCfGhWlSa\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 16px;\\\">Doctype</span>\",\"col\":12}},{\"id\":\"GHYrgxFcr9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Candidate Profile\",\"col\":3}},{\"id\":\"FpXisbJlJn\",\"type\":\"paragraph\",\"data\":{\"text\":\"Report\",\"col\":12}},{\"id\":\"EDavdAV9Q7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expert ERP\",\"col\":3}}]",
- "creation": "2025-10-12 16:48:37.212939",
- "custom_blocks": [],
- "docstatus": 0,
- "doctype": "Workspace",
- "for_user": "",
- "hide_custom": 0,
- "icon": "grid",
- "idx": 0,
- "indicator_color": "green",
- "is_hidden": 0,
- "label": "Expert Home",
- "link_type": "DocType",
- "links": [],
- "modified": "2025-10-27 15:11:04.484243",
- "modified_by": "Administrator",
- "module": "Expert Database",
- "name": "Expert Home",
- "number_cards": [],
- "owner": "Administrator",
- "parent_page": "",
- "public": 1,
- "quick_lists": [],
- "roles": [],
- "sequence_id": 23.0,
- "shortcuts": [
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Candidate Profile",
-   "link_to": "Candidate Profile",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Expert ERP",
-   "link_to": "expert erp",
-   "report_ref_doctype": "Candidate Profile",
-   "type": "Report"
-  }
- ],
- "title": "Expert Home",
- "type": "Workspace"
+    "charts": [],
+    "content": "[{\"id\":\"jxCfGhWlSa\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 16px;\\\">Doctype</span>\",\"col\":12}},{\"id\":\"GHYrgxFcr9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Candidate Profile\",\"col\":3}},{\"id\":\"FpXisbJlJn\",\"type\":\"paragraph\",\"data\":{\"text\":\"Report\",\"col\":12}},{\"id\":\"EDavdAV9Q7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expert ERP\",\"col\":3}}]",
+    "creation": "2025-10-12 16:48:37.212939",
+    "custom_blocks": [],
+    "docstatus": 0,
+    "doctype": "Workspace",
+    "for_user": "",
+    "hide_custom": 0,
+    "icon": "users",
+    "idx": 0,
+    "indicator_color": "",
+    "is_hidden": 0,
+    "label": "Expert Home",
+    "links": [],
+    "modified": "2025-12-18 15:24:37.399875",
+    "modified_by": "Administrator",
+    "module": "Expert Database",
+    "name": "Expert Home",
+    "number_cards": [],
+    "owner": "Administrator",
+    "parent_page": "",
+    "public": 1,
+    "quick_lists": [],
+    "roles": [
+        {
+            "role": "System Manager"
+        },
+        {
+            "role": "Administrator"
+        },
+        {
+            "role": "Expert User"
+        }
+    ],
+    "sequence_id": 32.0,
+    "shortcuts": [
+        {
+            "color": "Grey",
+            "doc_view": "List",
+            "label": "Candidate Profile",
+            "link_to": "Candidate Profile",
+            "stats_filter": "[]",
+            "type": "DocType"
+        },
+        {
+            "color": "Grey",
+            "doc_view": "List",
+            "label": "Expert ERP",
+            "link_to": "expert erp",
+            "report_ref_doctype": "Candidate Profile",
+            "type": "Report"
+        }
+    ],
+    "title": "Expert Home"
 }

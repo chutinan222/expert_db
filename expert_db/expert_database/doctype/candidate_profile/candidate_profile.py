@@ -12,10 +12,7 @@ class CandidateProfile(Document):
 	from typing import TYPE_CHECKING, Literal
 
 	if TYPE_CHECKING:
-		from expert_db.expert_database.doctype.expert_specialization.expert_specialization import (
-			ExpertSpecialization,
-		)
-
+		from expert_db.expert_database.doctype.expert_specialization.expert_specialization import ExpertSpecialization
 		affiliation: str | None
 		announcement_attachment: str | None
 		announcement_date: str | None
@@ -23,9 +20,7 @@ class CandidateProfile(Document):
 		expert_advisor: int
 		expert_degree: str | None
 		expert_examiner: int
-		expert_specialization: list[
-			ExpertSpecialization
-		]
+		expert_specialization: list[ExpertSpecialization]
 		m_ie: int
 		m_im: int
 		m_le: int
